@@ -12,6 +12,10 @@ contract Counter {
         number++;
     }
 
+    function increment2() public {
+        number++;
+    }
+
     function gogo() private {
          uint256 h = 3;
     }
