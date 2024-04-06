@@ -12,6 +12,11 @@ contract Counter {
         number++;
     }
 
+    function gogo() private {
+         uint256 h = 3;
+    }
+
+
 
     uint256 public balance;
     uint256 public price;
