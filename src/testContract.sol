@@ -4,7 +4,7 @@
 
 pragma solidity ^0.8.21;
 
-import "./test2.sol";
+// import "./test2.sol";
 
 contract ERC20 {
     string private _name;
