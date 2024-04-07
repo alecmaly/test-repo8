@@ -6,20 +6,21 @@ contract Counter {
 
     struct meowmix {
         uint256 x;
-        mapping(address =>  uint256) balance;
+        // mapping(address =>  uint256) balance;
     }
-    mapping(meowmix =>  uint256) pp;
+    mapping(address =>  meowmix) pp;
+    meowmix m;
 
     function setNumber(uint256 newNumber) public {
         number = newNumber;
     }
 
-    function increment(meowmix m) public returns (uint256, meowmix) {
+    function increment(address addr) public returns (uint256, meowmix memory) {
         number++;
         return (4, m);
     }
 
-    function increment2() public {
+    function increment2(meowmix memory m) public {
         number++;
     }
 
