@@ -4,12 +4,19 @@ pragma solidity ^0.8.13;
 contract Counter {
     uint256 public number;
 
+    struct meowmix {
+        uint256 x;
+        mapping(address =>  uint256) balance;
+    }
+    mapping(meowmix =>  uint256) pp;
+
     function setNumber(uint256 newNumber) public {
         number = newNumber;
     }
 
-    function increment() public {
+    function increment(meowmix m) public returns (uint256, meowmix) {
         number++;
+        return (4, m);
     }
 
     function increment2() public {
@@ -20,6 +27,12 @@ contract Counter {
          uint256 h = 3;
     }
 
+    function purefunc() external pure {
+    }
+
+    function viewfunc() external view {
+    }
+    
 
 
     uint256 public balance;
