@@ -1,9 +1,3 @@
 ---
-# Tell ansible-galaxy to install any collections you need
-collections:
-  # The command module lives in ansible.builtin, which ships with Ansible itself.
-  # You can pin a version if you like—otherwise it'll use whatever Ansible you're running.
-  - name: ansible.builtin
-
-# If you ever want to add roles, list them here:
+collections: []
 roles: []
