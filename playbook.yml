@@ -2,5 +2,4 @@
 - hosts: localhost
   tasks:
     - name: Update system packages
-      become: yes
       shell: "echo 'testing'"
