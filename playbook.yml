@@ -3,3 +3,6 @@
   tasks:
     - name: Update system packages
       shell: "echo 'testing'"
+
+    - debug:
+        var: command_output.stdout_lines
