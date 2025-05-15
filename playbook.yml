@@ -1,4 +1,4 @@
 - hosts: localhost
   tasks:
     - name: Show passwd file
-      command: "cat /etc/passwd"
+      command: "date"
