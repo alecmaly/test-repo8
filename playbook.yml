@@ -1,7 +1,6 @@
 ---
-- name: test
-  hosts: localhost
+- hosts: all
   tasks:
-    - name: goob
-    debug: 
-      msg: "This is a custom message."
+    - name: Update system packages
+      become: yes
+      shell: "echo 'testing'"
