@@ -1,3 +1,6 @@
-- name: Print a message
-  debug:
-    msg: "This is a custom message."
+- name: test
+  hosts: localhost
+  tasks:
+    - name: goob
+    debug: 
+      msg: "This is a custom message."
